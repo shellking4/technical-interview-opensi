@@ -17,6 +17,5 @@ export function anagramSet(target: string, candidates: string[]): string[] {
     return sortedWord1 === sortedWord2;
   }
   const matches = candidates.filter(candidate => target.toLowerCase() !== candidate.toLowerCase() && areAnagrams(target, candidate));
-  console.log("matches", matches)
   return matches;
 }
